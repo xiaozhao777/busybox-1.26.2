@@ -1,0 +1,10 @@
+# /etc/profile: system-wide .profile file for the Bourne shells
+
+USER="id -un"
+LOGNAME=$USER
+HOSTNAME='/bin/hostname'
+export PS1='[\u@\h:\w]\#'
+
+PATH=/bin:/sbin:/usr/bin:/usr/sbin
+LD_LIBRARY_PATH=/lib:/usr/lib:$LD_LIBRARY_PATH
+export PATH LD_LIBRARY_PATH
